@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shell - Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Simple Shell</h1>
+        <p>Un interpréteur de commandes UNIX minimaliste, robuste et performant écrit en C.</p>
+        <div style="margin-top: 2rem;">
+            <a href="https://github.com/boukniter/simple_shell" class="btn">Voir sur GitHub</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="features">
+            <h2>Fonctionnalités Clés</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🚀 Exécution Native</h3>
+                    <p>Gestion précise du PATH, fork et exécution de binaires système.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛠️ Commandes Internes</h3>
+                    <p>Support de cd, exit, env, setenv, unsetenv, alias et history.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔗 Logique Avancée</h3>
+                    <p>Gestion des opérateurs logiques (&&, ||) et séquentiels (;).</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Performance</h3>
+                    <p>Gestion rigoureuse de la mémoire et parsing optimisé.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage">
+            <h2>Installation & Utilisation</h2>
+            <div class="command-box">
+                <p><strong>Compilation :</strong></p>
+                <pre>gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh</pre>
+            </div>
+            <div class="command-box">
+                <p><strong>Lancement :</strong></p>
+                <pre>./hsh</pre>
+            </div>
+        </section>
+
+        <section id="demo">
+            <h2>Aperçu / Démo</h2>
+            <div class="demo-box">
+                <p>Placez votre GIF de démonstration ici<br><small>assets/simpleShell.gif</small></p>
+            </div>
+        </section>
+
+        <section id="examples">
+            <h2>Exemples</h2>
+            <pre>
+$ ls -l
+$ cd /tmp
+$ pwd
+$ echo "Hello Simple Shell"
+$ ls /var && echo "Success" || echo "Failed"
+$ exit
+            </pre>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Simple Shell Project</p>
+        <div class="meta">
+            Auteurs : Khawla Boukniter & Mohamed Hossam Baiz<br>
+            Réalisé dans le cadre de la formation ALX Africa
+        </div>
+    </footer>
+
+</body>
+
+</html>
